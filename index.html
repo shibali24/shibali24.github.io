@@ -4,34 +4,125 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Shibali Mishra</title>
-  <style>
-    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 48px auto; padding: 0 16px; line-height: 1.5; }
-    .pill { display:inline-block; padding:6px 10px; border:1px solid #ddd; border-radius:999px; margin:4px 6px 0 0; font-size:14px; text-decoration: none; }
-    a { color: inherit; }
-    .card { border:1px solid #eee; border-radius:14px; padding:16px; margin:14px 0; }
-  </style>
+
+  <!-- Typewriter-ish mono font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <h1>Shibali Mishra</h1>
-  <p>Minimal SWE portfolio.</p>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">SM</div>
+        <div class="brand-text">
+          <h1>Shibali Mishra</h1>
+          <p class="tag">SWE portfolio · projects, builds, experiments</p>
+        </div>
+      </div>
 
-  <p>
-    <a class="pill" href="https://github.com/shibali24" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a class="pill" href="mailto:smishra@bowdoin.edu">Email (.edu)</a>
-    <a class="pill" href="mailto:mishrashibali@gmail.com">Email (personal)</a>
-    <a class="pill" href="https://www.linkedin.com/in/shibali/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-  </p>
+      <button class="pill pill-btn" id="copySiteBtn" type="button" title="Copy site link">
+        Copy link
+      </button>
+    </header>
 
-  <h2>Projects</h2>
+    <main>
+      <section class="panel hero">
+        <p class="intro">
+          Minimal SWE portfolio. I like building practical systems, clean UIs, and scrappy prototypes.
+        </p>
 
-  <div class="card">
-    <b>Project Name</b>
-    <p>1–2 lines on what it does + why it’s cool.</p>
-    <span class="pill">React</span><span class="pill">AWS</span>
-    <p>
-      <a href="https://demo-link.com" target="_blank" rel="noopener noreferrer">Demo</a> ·
-      <a href="https://github.com/shibali24/repo" target="_blank" rel="noopener noreferrer">Code</a>
-    </p>
+        <div class="links">
+          <a class="pill" href="https://github.com/shibali24" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="pill" href="https://www.linkedin.com/in/shibali/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="pill" href="mailto:smishra@bowdoin.edu">Email (.edu)</a>
+          <a class="pill" href="mailto:mishrashibali@gmail.com">Email (personal)</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">A few things I’ve been working on recently.</p>
+        </div>
+
+        <div class="grid">
+          <!-- Replace these cards with your real projects -->
+          <article class="card">
+            <div class="card-top">
+              <h3>Project Name</h3>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">Systems</span>
+              </div>
+            </div>
+            <p class="desc">1–2 lines on what it does + why it’s cool.</p>
+            <div class="card-links">
+              <a href="https://demo-link.com" target="_blank" rel="noopener noreferrer">Demo</a>
+              <span class="dot">·</span>
+              <a href="https://github.com/shibali24/repo" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Project Name</h3>
+              <div class="chips">
+                <span class="chip">Web</span>
+                <span class="chip">JS</span>
+              </div>
+            </div>
+            <p class="desc">Short description goes here. Keep it crisp.</p>
+            <div class="card-links">
+              <a href="https://demo-link.com" target="_blank" rel="noopener noreferrer">Demo</a>
+              <span class="dot">·</span>
+              <a href="https://github.com/shibali24/repo" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Project Name</h3>
+              <div class="chips">
+                <span class="chip">AWS</span>
+                <span class="chip">Networking</span>
+              </div>
+            </div>
+            <p class="desc">What it is, what it taught you, what it impacts.</p>
+            <div class="card-links">
+              <a href="https://demo-link.com" target="_blank" rel="noopener noreferrer">Demo</a>
+              <span class="dot">·</span>
+              <a href="https://github.com/shibali24/repo" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">Optional, but it helps recruiters skim.</p>
+        </div>
+
+        <p class="about">
+          I’m interested in software that’s reliable under real-world constraints: latency, churn, messy data,
+          and humans. I care about clean interfaces and measurable outcomes.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        <span id="status" class="muted" aria-live="polite"></span>
+        <span class="muted">·</span>
+        <a href="https://github.com/shibali24" target="_blank" rel="noopener noreferrer">shibali24</a>
+      </p>
+    </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
