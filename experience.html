@@ -1,0 +1,159 @@
+<div id="top"></div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience · Shibali Mishra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <img class="brand-avatar" src="headshot.png" alt="Headshot of Shibali Mishra" />
+        <div class="brand-text">
+          <h1>Shibali Mishra</h1>
+          <p class="tag">software · systems · art</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <a class="pill" href="https://github.com/shibali24" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="pill" href="https://www.linkedin.com/in/shibali/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </header>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="pill nav-pill" href="index.html">Home</a>
+      <a class="pill nav-pill" href="projects.html">Projects</a>
+      <a class="pill nav-pill" href="art.html">Art</a>
+      <a class="pill nav-pill active" href="experience.html">Experience</a>
+      <a class="pill nav-pill" href="resume.html">Resume</a>
+      <a class="pill nav-pill" href="research.html">Research</a>
+    </nav>
+
+    <main>
+      <section class="panel">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p class="muted">A quick timeline of where I have worked and what I built there.</p>
+        </div>
+
+        <ol class="timeline">
+          <!-- 2025 -->
+          <li class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-body">
+              <div class="tl-top">
+                <h3>
+                  <span class="tl-kicker">Summer 2025</span><br />
+                  WinePair LLC, Software Engineering Intern
+                </h3>
+                <span class="tl-meta">May 2025 to Aug 2025</span>
+              </div>
+
+              <p class="muted tl-mini">
+                Production pairing site used by restaurants and customers. I worked on the backend engine and the full-stack rebuild so it could handle real traffic and real menus.
+              </p>
+
+              <ul class="tl-list">
+                <li>Migrated the product from Wix to FastAPI (Uvicorn), Azure SQL, and a React + Tailwind frontend.</li>
+                <li>Added server-side caching to precompute pairings and cut latency from about 30 seconds to under 3.</li>
+                <li>Built ingestion pipelines for 10+ restaurant menus and 1,000+ normalized dishes.</li>
+              </ul>
+
+              <div class="tl-tags">
+                <span class="tag-pill">FastAPI</span>
+                <span class="tag-pill">React</span>
+                <span class="tag-pill">Azure SQL</span>
+                <span class="tag-pill">Caching</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 2024 -->
+          <li class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-body">
+              <div class="tl-top">
+                <h3>
+                  <span class="tl-kicker">Summer 2024</span><br />
+                  ForeFlight (Boeing), Software Engineering Intern
+                </h3>
+                <span class="tl-meta">May 2024 to Aug 2024</span>
+              </div>
+
+              <p class="muted tl-mini">
+                Lots of data, lots of edge cases. I focused on automations and spatial filtering that made the pipeline cleaner and more reliable.
+              </p>
+
+              <ul class="tl-list">
+                <li>Refactored legacy C++ scripts into Python and integrated workflows with AWS S3 and TeamCity.</li>
+                <li>Automated TFR data extraction with a Python web scraper and stored results in PostgreSQL.</li>
+                <li>Designed an SQL spatial query using OpenStreetMap labels to reduce false positives in polygon filtering.</li>
+              </ul>
+
+              <div class="tl-tags">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">PostgreSQL</span>
+                <span class="tag-pill">AWS S3</span>
+                <span class="tag-pill">GIS</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 2023 -->
+          <li class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-body">
+              <div class="tl-top">
+                <h3>
+                  <span class="tl-kicker">Summer 2023</span><br />
+                  Center for Molecular Dynamics Nepal, Summer Research Intern
+                </h3>
+                <span class="tl-meta">May 2023 to Aug 2023</span>
+              </div>
+
+              <p class="muted tl-mini">
+                Fieldwork days, mapping days, and a lot of learning. This was the kind of work that made data feel very real.
+              </p>
+
+              <ul class="tl-list">
+                <li>Fieldwork and geospatial analysis for biodiversity and zoonotic disease surveillance in Bardia National Park.</li>
+                <li>Presented at Bowdoin’s President’s Research Symposium.</li>
+              </ul>
+
+              <div class="tl-tags">
+                <span class="tag-pill">Research</span>
+                <span class="tag-pill">Fieldwork</span>
+                <span class="tag-pill">Geospatial</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+        <div class="embed-row">
+          <a class="pill cta" href="resume.html">Open resume</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        <span id="status" class="muted" aria-live="polite"></span>
+        <span class="muted">·</span>
+        <a href="#top">Back to top</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
