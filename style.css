@@ -797,3 +797,40 @@ details summary::-webkit-details-marker { display: none; }
     max-width: 180px;
   }
 }
+
+/* Cute thumbnail wrapper + badge */
+.thumb-wrap{
+  position: relative;
+  display: inline-block;
+}
+
+.thumb-badge{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.86);
+  border: 1px solid rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
+}
+
+/* Softer, more “thumbnail” feeling */
+.repo-thumb{
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.18);
+}
+
+/* A little lift on hover */
+.project{
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.project:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.18);
+}
+
