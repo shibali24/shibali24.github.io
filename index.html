@@ -11,6 +11,68 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Tiny pixel friend */
+    .walking-cat{
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      width: 96px;
+      z-index: 999;
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      filter: drop-shadow(0 10px 18px rgba(0,0,0,0.35));
+    }
+    .walking-cat img{
+      width: 96px;
+      height: auto;
+      image-rendering: pixelated;
+    }
+    .walking-cat:focus-visible{
+      outline: 2px solid rgba(255,255,255,0.7);
+      outline-offset: 6px;
+      border-radius: 16px;
+    }
+    .cat-bubble{
+      position: absolute;
+      left: 86px;
+      bottom: 54px;
+      background: rgba(255,255,255,0.92);
+      color: #111;
+      font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      padding: 6px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.12);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 180ms ease, transform 180ms ease;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    .walking-cat:hover .cat-bubble,
+    .walking-cat:focus-visible .cat-bubble{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (prefers-reduced-motion: no-preference){
+      .walking-cat{ animation: cat-bob 2.4s ease-in-out infinite; }
+      .walking-cat:hover{ animation-play-state: paused; }
+      @keyframes cat-bob{
+        0%,100%{ transform: translateY(0); }
+        50%{ transform: translateY(-6px); }
+      }
+    }
+    @media (max-width: 520px){
+      .walking-cat{ left: 12px; bottom: 12px; width: 72px; }
+      .walking-cat img{ width: 72px; }
+      .cat-bubble{ display: none; }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -232,6 +294,13 @@
       </p>
     </footer>
   </div>
+
+
+  <!-- Walking cat (add walking_cat.gif next to this file) -->
+  <a class="walking-cat" href="projects.html" aria-label="Click the cat to see projects">
+    <img src="walking_cat.gif" alt="Pixel art orange cat walking" loading="lazy" />
+    <span class="cat-bubble" aria-hidden="true">psst… click me</span>
+  </a>
 
   <!-- Override typing phrases from index.html (so we can rework this page without touching script.js yet) -->
   <script>
