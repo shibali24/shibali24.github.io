@@ -48,22 +48,27 @@
         <div class="projects-grid">
 
           <!-- ===================== Honeycomb ===================== -->
-          <article class="project" id="honeycomb">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>Honeycomb</h3>
-                <p class="project-sub">
-                  A peer to peer disaster messaging network for messy conditions: churn, dropped nodes, and unreliable links.
-                  Built around a Chord-inspired ring, then stress tested on a 70-node EC2 setup to see how quickly the network recovers when failures hit mid-run.
-                </p>
-              </div>
-
+          <article class="project featured" id="honeycomb">
+            <div class="project-top stacked">
               <img
                 class="repo-thumb"
                 src="https://opengraph.githubassets.com/1/shibali24/honeycomb"
                 alt="Honeycomb GitHub preview"
                 loading="lazy"
               />
+
+              <div class="project-title">
+                <h3>Honeycomb</h3>
+                <p class="project-hook">A self-healing peer to peer messaging network for disaster conditions.</p>
+                <p class="project-sub">
+                  Built around a Chord-inspired ring and stress tested on a 70 node EC2 setup to measure recovery when failures hit mid run.
+                </p>
+                <ul class="project-bullets">
+                  <li>Chord style ring with successor lists and a long range finger pointer</li>
+                  <li>Probabilistic broadcast forwarding with message ID deduplication</li>
+                  <li>Failure injection experiments tracking convergence and delivery behavior</li>
+                </ul>
+              </div>
             </div>
 
             <div class="project-meta">
@@ -104,28 +109,18 @@
                 </div>
               </div>
             </details>
-
           </article>
 
           <!-- ===================== StaySignals ===================== -->
-          <article class="project" id="staysignals">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>StaySignals</h3>
-                <p class="project-sub">
-                Built for the Klaviyo Winter Challenge hackathon, where I won $10,000 as a solo participant. A concierge workflow prototype for boutique hotels: pick a guest, see their timeline, and generate staff-ready concierge briefs and responses.
-                It reads guest context from Klaviyo (Profiles + Events) and uses Gemini to turn messy event data into structured, actionable notes.
-                Designed as a simple, fast UI that makes “who is this guest and what do they need” feel obvious.
-              </p>
-              </div>
-
+          <article class="project featured" id="staysignals">
+            <div class="project-top stacked">
               <div class="thumb-wrap">
                 <span
-                class="thumb-badge"
-                style="background:#fee2e2;color:#991b1b;border:1px solid #fecaca;"
-              >
-                Klaviyo Winter Challenge · $10,000 Winner
-              </span>
+                  class="thumb-badge"
+                  style="background:#fee2e2;color:#991b1b;border:1px solid #fecaca;"
+                >
+                  Klaviyo Winter Challenge · $10,000 Winner
+                </span>
 
                 <img
                   class="repo-thumb"
@@ -133,6 +128,19 @@
                   alt="StaySignals GitHub preview"
                   loading="lazy"
                 />
+              </div>
+
+              <div class="project-title">
+                <h3>StaySignals</h3>
+                <p class="project-hook">A concierge workflow prototype that turns guest history into staff ready briefs.</p>
+                <p class="project-sub">
+                  Built for the Klaviyo Winter Challenge hackathon, where I won $10,000 as a solo participant.
+                </p>
+                <ul class="project-bullets">
+                  <li>Pulls guest context from Klaviyo Profiles and Events</li>
+                  <li>Uses Gemini to convert messy event data into structured notes</li>
+                  <li>UI designed to make “who is this guest and what do they need” feel obvious</li>
+                </ul>
               </div>
             </div>
 
@@ -151,21 +159,25 @@
           </article>
 
           <!-- ===================== WinePair ===================== -->
-          <article class="project" id="winepair">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>WinePair</h3>
-                <p class="project-sub">
-                  A production pairing site used by restaurants and diners. The core challenge is speed and realism:
-                  match real menus to real wine inventories fast enough that it feels instant, even when the data is messy.
-                  I worked on the full stack build (FastAPI + Azure SQL + React/Tailwind) and the server-side pairing pipeline so results load quickly and consistently.
-                </p>
-              </div>
-
+          <article class="project featured" id="winepair">
+            <div class="project-top stacked">
               <div class="doc-card">
                 <div class="doc-kicker">Live site</div>
                 <div class="doc-title">winepair.net</div>
                 <div class="doc-meta">production pairing engine · full stack build</div>
+              </div>
+
+              <div class="project-title">
+                <h3>WinePair</h3>
+                <p class="project-hook">A production pairing site that matches real menus to real wine inventories fast.</p>
+                <p class="project-sub">
+                  I worked on the full stack build and the server-side pairing pipeline so results load quickly and consistently even when the data is messy.
+                </p>
+                <ul class="project-bullets">
+                  <li>FastAPI backend with Azure SQL and a React and Tailwind frontend</li>
+                  <li>Backend workflow focused on predictable performance and reliability</li>
+                  <li>Designed for realism: messy inputs, real inventories, fast output</li>
+                </ul>
               </div>
             </div>
 
@@ -183,22 +195,26 @@
 
           <!-- ===================== TravelJournal ===================== -->
           <article class="project" id="traveljournal">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>Travel Journal</h3>
-                <p class="project-sub">
-                  A travel journal app that treats places like real data. Pin trips on a map, validate locations through geocoding,
-                  and attach photos using the actual Android camera flow (intent + FileProvider), not a shortcut picker.
-                  Built with Jetpack Compose, OpenStreetMap, and Nominatim.
-                </p>
-              </div>
-
+            <div class="project-top stacked">
               <img
                 class="repo-thumb"
                 src="https://opengraph.githubassets.com/1/shibali24/TravelJournal"
                 alt="TravelJournal GitHub preview"
                 loading="lazy"
               />
+
+              <div class="project-title">
+                <h3>Travel Journal</h3>
+                <p class="project-hook">A travel journal app that treats places like real data.</p>
+                <p class="project-sub">
+                  Pin trips on a map, validate locations through geocoding, and attach photos using the real Android camera intent flow with FileProvider.
+                </p>
+                <ul class="project-bullets">
+                  <li>Jetpack Compose UI with an MVVM style structure</li>
+                  <li>OpenStreetMap + Nominatim for mapping and geocoding</li>
+                  <li>Camera capture via ACTION_IMAGE_CAPTURE and EXTRA_OUTPUT URIs</li>
+                </ul>
+              </div>
             </div>
 
             <div class="project-meta">
@@ -231,22 +247,26 @@
 
           <!-- ===================== K-Means Clustering ===================== -->
           <article class="project" id="kmeans">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>K-Means Clustering</h3>
-                <p class="project-sub">
-                  A clustering project where the point was not “run K-Means and plot it.” I focused on how choices change the outcome:
-                  feature scaling, picking K, diagnosing bad clusters, and explaining results in plain language.
-                  The write-up and slides walk through why the clusters form, what they capture, and what they miss.
-                </p>
-              </div>
-
+            <div class="project-top stacked">
               <img
                 class="repo-thumb"
                 src="https://opengraph.githubassets.com/1/shibali24/AI_final_project"
                 alt="K-Means project GitHub preview"
                 loading="lazy"
               />
+
+              <div class="project-title">
+                <h3>K-Means Clustering</h3>
+                <p class="project-hook">A clustering project focused on choices, tradeoffs, and interpretation.</p>
+                <p class="project-sub">
+                  The write-up and slides walk through feature scaling, picking K, diagnosing bad clusters, and explaining what the clusters capture and miss.
+                </p>
+                <ul class="project-bullets">
+                  <li>Explores how preprocessing decisions shift clustering outcomes</li>
+                  <li>Emphasis on interpretability, not just plotting a result</li>
+                  <li>Maps and write-up designed for plain language explanation</li>
+                </ul>
+              </div>
             </div>
 
             <div class="project-meta">
@@ -279,19 +299,24 @@
 
           <!-- ===================== GIS Paper ===================== -->
           <article class="project" id="gis-paper">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>GIS Paper</h3>
-                <p class="project-sub">
-                  A mapping-driven paper on gentrification in Brooklyn. The goal was to make the spatial story feel obvious:
-                  where change concentrates, how it spreads, and what the maps reveal that a paragraph can hide.
-                </p>
-              </div>
-
+            <div class="project-top stacked">
               <div class="doc-card">
                 <div class="doc-kicker">Paper + deck</div>
                 <div class="doc-title">Gentrification &amp; its Implications</div>
                 <div class="doc-meta">GIS analysis · visual story through maps</div>
+              </div>
+
+              <div class="project-title">
+                <h3>GIS Paper</h3>
+                <p class="project-hook">A mapping-driven paper on gentrification in Brooklyn.</p>
+                <p class="project-sub">
+                  The goal was to make the spatial story feel obvious: where change concentrates, how it spreads, and what maps reveal that a paragraph can hide.
+                </p>
+                <ul class="project-bullets">
+                  <li>Spatial narrative built from tract-level demographic and economic indicators</li>
+                  <li>Focus on clear map communication, not just analysis</li>
+                  <li>Paper and deck designed to be read quickly and visually</li>
+                </ul>
               </div>
             </div>
 
@@ -334,19 +359,24 @@
 
           <!-- ===================== Mass Shootings ===================== -->
           <article class="project" id="mass-shootings">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>Mass Shootings in the US: In Data</h3>
-                <p class="project-sub">
-                  A data story that tries to be careful and precise. I cleaned the dataset, built summaries that do not sensationalize,
-                  and focused on patterns across time and geography while being honest about what the numbers can and cannot support.
-                </p>
-              </div>
-
+            <div class="project-top stacked">
               <div class="doc-card">
                 <div class="doc-kicker">Paper</div>
                 <div class="doc-title">Mass Shootings in the US: In Data</div>
                 <div class="doc-meta">data cleaning · analysis · visuals</div>
+              </div>
+
+              <div class="project-title">
+                <h3>Mass Shootings in the US: In Data</h3>
+                <p class="project-hook">A careful data story built to avoid sensationalizing.</p>
+                <p class="project-sub">
+                  I cleaned the dataset, built summaries that stay grounded, and focused on patterns across time and geography while being honest about limitations.
+                </p>
+                <ul class="project-bullets">
+                  <li>Reproducible workflow from cleaning to plots and tables</li>
+                  <li>Emphasis on uncertainty and what the dataset can and cannot support</li>
+                  <li>Visuals designed to inform, not dramatize</li>
+                </ul>
               </div>
             </div>
 
@@ -368,20 +398,21 @@
 
           <!-- ===================== Cosmic Wood Soup ===================== -->
           <article class="project compact" id="cosmic-wood-soup">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>Cosmic Wood Soup</h3>
-                <p class="project-sub">
-                  A cozy little p5.js world where you drag planets to “paint” glowing, spirograph-style trails around a sun. It is part flow field, part symmetry toy, with soft wood taps and loops that make it feel oddly calming. The fun is that tiny movements turn into big, satisfying patterns you want to pause and screenshot.
-                </p>
-              </div>
-
+            <div class="project-top stacked">
               <img
                 class="repo-thumb"
                 src="https://opengraph.githubassets.com/1/shibali24/CosmicWoodSoup"
                 alt="Cosmic Wood Soup GitHub preview"
                 loading="lazy"
               />
+
+              <div class="project-title">
+                <h3>Cosmic Wood Soup</h3>
+                <p class="project-hook">A cozy p5.js world where you drag planets to paint glowing trails.</p>
+                <p class="project-sub">
+                  Tiny movements turn into spirograph-like symmetry patterns, layered with soft wood tap loops for an ASMR-ish feel.
+                </p>
+              </div>
             </div>
 
             <div class="project-meta">
@@ -398,20 +429,21 @@
 
           <!-- ===================== Slam Poetry Generator ===================== -->
           <article class="project compact" id="slam-poetry">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>Slam Poetry Generator</h3>
-                <p class="project-sub">
-                  A generative poetry system that writes short poems, performs them out loud, and only saves the ones that score well. Under the hood it is a Markov chain trained on Teasdale and H.D., plus a lightweight evaluator that rewards vivid imagery, basic structure, and rhythm while punishing repetition. There is also a small Flask web mode where the poem types in line-by-line while Safari voices perform it live.
-                </p>
-              </div>
-
+            <div class="project-top stacked">
               <img
                 class="repo-thumb"
                 src="https://opengraph.githubassets.com/1/shibali24/M2-Poetry-Slam"
                 alt="Slam Poetry Generator GitHub preview"
                 loading="lazy"
               />
+
+              <div class="project-title">
+                <h3>Slam Poetry Generator</h3>
+                <p class="project-hook">A generative poetry system that writes, performs, and self-selects poems.</p>
+                <p class="project-sub">
+                  Markov chain generation plus a lightweight evaluator that rewards vivid imagery and structure while punishing repetition.
+                </p>
+              </div>
             </div>
 
             <div class="project-actions">
@@ -421,14 +453,21 @@
 
           <!-- ===================== Android Minesweeper ===================== -->
           <article class="project compact" id="android-minesweeper">
-            <div class="project-top">
+            <div class="project-top stacked">
+              <img
+                class="repo-thumb"
+                src="https://opengraph.githubassets.com/1/shibali24/minesweeper"
+                alt="Android Minesweeper GitHub preview"
+                loading="lazy"
+              />
+
               <div class="project-title">
                 <h3>Android Minesweeper</h3>
+                <p class="project-hook">A clean Minesweeper clone built in Kotlin with Jetpack Compose.</p>
                 <p class="project-sub">
-                  A clean little Minesweeper clone built in Kotlin with Jetpack Compose. It runs a full game loop on a 5x5 board with randomly placed mines, flags, number hints, win and lose states, and a reset button.
+                  Full game loop with mine placement, flags, number hints, win and lose states, and a reset button.
                 </p>
               </div>
-              <img class="repo-thumb" src="https://opengraph.githubassets.com/1/shibali24/minesweeper" alt="Android Minesweeper GitHub preview" loading="lazy" />
             </div>
 
             <div class="project-meta">
@@ -443,16 +482,23 @@
             </div>
           </article>
 
-          <!-- Android Weather meta added -->
+          <!-- ===================== Android Weather ===================== -->
           <article class="project compact" id="android-weather">
-            <div class="project-top">
+            <div class="project-top stacked">
+              <img
+                class="repo-thumb"
+                src="https://opengraph.githubassets.com/1/shibali24/WeatherApplication"
+                alt="Android Weather GitHub preview"
+                loading="lazy"
+              />
+
               <div class="project-title">
                 <h3>Android Weather Application</h3>
+                <p class="project-hook">A modern weather app with a simple Compose UI and clean architecture.</p>
                 <p class="project-sub">
-                  A modern Android weather app that pulls real-time forecasts by city (and optionally by location) and presents them in a simple Compose UI. Built with MVVM, ViewModel, Retrofit networking, and Hilt DI.
+                  Pulls real time forecasts by city and optionally by location, built with MVVM and dependency injection.
                 </p>
               </div>
-              <img class="repo-thumb" src="https://opengraph.githubassets.com/1/shibali24/WeatherApplication" alt="Android Weather GitHub preview" loading="lazy" />
             </div>
 
             <div class="project-meta">
@@ -470,15 +516,28 @@
 
           <!-- ===================== Concurrency Lyrics Video (M3) ===================== -->
           <article class="project" id="concurrency-lyrics">
-            <div class="project-top">
+            <div class="project-top stacked">
+              <img
+                class="repo-thumb"
+                src="https://opengraph.githubassets.com/1/shibali24/m3_shibali"
+                alt="Concurrency Lyrics Video GitHub preview"
+                loading="lazy"
+              />
+
               <div class="project-title">
                 <h3>Concurrency Lyrics Video</h3>
+                <p class="project-hook">A music + code project where a concurrent improv layer mutates each run.</p>
                 <p class="project-sub">
-                  A music + code project where the song structure stays fixed (tempo, lyrics, harmony), while a concurrent improvisation layer mutates instruments, timbres, and melodic gestures on each run. The improv script locks to the same BPM grid but behaves unpredictably—like real concurrent processes.
+                  The song structure stays fixed, but instruments and melodic gestures evolve unpredictably while staying locked to the same BPM grid.
                 </p>
+                <ul class="project-bullets">
+                  <li>Concurrency concept mapped into generative music behavior</li>
+                  <li>Improvisation layer changes per run without breaking timing</li>
+                  <li>Output rendered into shareable video</li>
+                </ul>
               </div>
-              <img class="repo-thumb" src="https://opengraph.githubassets.com/1/shibali24/m3_shibali" alt="Concurrency Lyrics Video GitHub preview" loading="lazy" />
             </div>
+
             <div class="project-meta">
               <span class="tag-pill">Sonic Pi</span>
               <span class="tag-pill">Ruby</span>
@@ -486,6 +545,7 @@
               <span class="tag-pill">Generative music</span>
               <span class="tag-pill">MoviePy</span>
             </div>
+
             <div class="project-actions">
               <a class="pill cta" href="https://github.com/shibali24/m3_shibali" target="_blank" rel="noopener noreferrer">Open repo</a>
               <a class="pill cta" href="https://drive.google.com/drive/folders/1iXk-cOKJRkHiZZWgJx-n6ILrSAuMl8r-" target="_blank" rel="noopener noreferrer">Open videos</a>
@@ -494,21 +554,30 @@
 
           <!-- ===================== Markov ASMR Generator ===================== -->
           <article class="project" id="markov-asmr">
-            <div class="project-top">
+            <div class="project-top stacked">
+              <img
+                class="repo-thumb"
+                src="https://opengraph.githubassets.com/1/shibali24/m1_shibali"
+                alt="Markov ASMR GitHub preview"
+                loading="lazy"
+              />
+
               <div class="project-title">
                 <h3>Markov ASMR Generator</h3>
+                <p class="project-hook">A Markov-chain audio generator that stitches everyday sounds into ASMR.</p>
                 <p class="project-sub">
-                  A Markov-chain audio generator that stitches together everyday sounds (fire crackling, typing, water) into relaxing ASMR. Each run is probabilistic and produces a slightly different sequence.
+                  Each run is probabilistic and produces a slightly different sequence, designed to be relaxing rather than repetitive.
                 </p>
               </div>
-              <img class="repo-thumb" src="https://opengraph.githubassets.com/1/shibali24/m1_shibali" alt="Markov ASMR GitHub preview" loading="lazy" />
             </div>
+
             <div class="project-meta">
               <span class="tag-pill">Python</span>
               <span class="tag-pill">Markov chains</span>
               <span class="tag-pill">Audio</span>
               <span class="tag-pill">NumPy</span>
             </div>
+
             <div class="project-actions">
               <a class="pill cta" href="https://github.com/shibali24/m1_shibali" target="_blank" rel="noopener noreferrer">Open repo</a>
             </div>
@@ -516,29 +585,34 @@
 
           <!-- ===================== Levitating Remix ===================== -->
           <article class="project" id="levitating-remix">
-            <div class="project-top">
-              <div class="project-title">
-                <h3>Stylistically Mediating Dua Lipa’s <em>Levitating</em></h3>
-                <p class="project-sub">
-                  A remix experiment that keeps the original pop structure while layering Bollywood-style timbres and percussion to explore “filmi sound” as stylistic mediation. Built with Moises.ai, GarageBand, and Suno.
-                </p>
-              </div>
+            <div class="project-top stacked">
               <div class="doc-card">
                 <div class="doc-kicker">Audio</div>
                 <div class="doc-title">Drive embed</div>
                 <div class="doc-meta">remix · production · mediation</div>
               </div>
+
+              <div class="project-title">
+                <h3>Stylistically Mediating Dua Lipa’s <em>Levitating</em></h3>
+                <p class="project-hook">A remix experiment that explores “filmi sound” as stylistic mediation.</p>
+                <p class="project-sub">
+                  Keeps the original pop structure while layering Bollywood-style timbres and percussion.
+                </p>
+              </div>
             </div>
+
             <div class="project-meta">
               <span class="tag-pill">GarageBand</span>
               <span class="tag-pill">Moises.ai</span>
               <span class="tag-pill">Suno</span>
               <span class="tag-pill">Remix</span>
             </div>
+
             <div class="project-actions">
               <a class="pill cta" href="https://drive.google.com/file/d/1o30p5QtuathsYeDQ1Tmj42zfAbsKr3wD/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open in Drive</a>
               <a class="pill cta" href="#levitating-embed">Open embed</a>
             </div>
+
             <details class="media" id="levitating-embed">
               <summary>Embed</summary>
               <div class="media-body">
@@ -550,6 +624,8 @@
               </div>
             </details>
           </article>
+
+        </div>
       </section>
     </main>
 

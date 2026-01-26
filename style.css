@@ -863,3 +863,123 @@ details summary::-webkit-details-marker { display: none; }
   margin-top: 0.8rem;
   border-radius: 10px;
 }
+
+/* ===== Projects layout improvements (stacked + hierarchy + scanability) ===== */
+
+.project-top.stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.repo-thumb {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Hook + details separation */
+.project-hook {
+  font-weight: 600;
+  margin: 0.25rem 0 0.25rem 0;
+}
+
+.project-sub {
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+/* Bullets for technical details */
+.project-bullets {
+  padding-left: 1.2rem;
+  margin: 0.6rem 0 0 0;
+  max-width: 65ch;
+}
+
+.project-bullets li {
+  margin-bottom: 0.25rem;
+}
+
+/* Featured project styling */
+.project.featured {
+  border: 2px solid rgba(99, 102, 241, 0.15);
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.04), transparent);
+}
+
+/* ===== Typography unification ===== */
+
+/* 1. Global text smoothing */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 2. Base font scale */
+body,
+p,
+li,
+span {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* 3. Section headers */
+.section-head h2 {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+/* 4. Project titles */
+.project-title h3 {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.25rem;
+}
+
+/* 5. Project hook (the bold one-liner) */
+.project-hook {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* 6. Secondary description */
+.project-sub {
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+/* 7. Bullet points */
+.project-bullets li {
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+/* 8. Tags / pills */
+.tag-pill,
+.project-meta span {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+/* 9. Buttons */
+.project-actions .pill {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* 10. Details summary labels */
+details summary {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.project-hook {
+  color: #111;
+}
+
+.project-sub,
+.project-bullets li {
+  color: #444;
+}
