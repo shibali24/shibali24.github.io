@@ -983,3 +983,32 @@ details summary {
 .project-bullets li {
   color: #444;
 }
+/* ===== Header scale only (no background changes) ===== */
+
+/* Name */
+.brand-text h1 {
+  font-size: 1.35rem; /* was ~1.1–1.2 */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Subtitle */
+.brand-text .tag {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Nav pills */
+.nav-pill {
+  font-size: 0.95rem;
+}
+
+/* Social buttons (GitHub / LinkedIn) */
+.header-actions .pill {
+  font-size: 0.9rem;
+}
+
+.typing {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
